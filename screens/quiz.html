@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kuis Budaya Indonesia</title>
+  <link rel="stylesheet" href="../css/quiz.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Segoe+UI&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <h1>🌺 Kuis Budaya Indonesia 🌺</h1>
+    <form id="quizForm">
+      
+      <!-- Soal 1 -->
+      <div class="question-box">
+        <p><strong>1. Rumah adat Tongkonan berasal dari?</strong></p>
+        <img src="../assets/quiz/Tongkonan.jpg" alt="Tongkonan" class="question-img">
+        <div class="options-grid">
+          <label><input type="radio" name="q0" value="a">A. Jawa</label>
+          <label><input type="radio" name="q0" value="b">B. Sumatra</label>
+          <label><input type="radio" name="q0" value="c">C. Sulawesi</label>
+          <label><input type="radio" name="q0" value="d">D. Kalimantan</label>
+        </div>
+        <div class="feedback" id="feedback-q0"></div>
+      </div>
+
+      <!-- Soal 2 -->
+      <div class="question-box">
+        <p><strong>2. Tari Kecak berasal dari?</strong></p>
+        <img src="../assets/quiz/TariKecakk.jpg" alt="Tari Kecak" class="question-img">
+        <div class="options-grid">
+          <label><input type="radio" name="q1" value="a">A. Bali</label>
+          <label><input type="radio" name="q1" value="b">B. Papua</label>
+          <label><input type="radio" name="q1" value="c">C. NTT</label>
+          <label><input type="radio" name="q1" value="d">D. Aceh</label>
+        </div>
+        <div class="feedback" id="feedback-q1"></div>
+      </div>
+
+      <!-- Soal 3 -->
+      <div class="question-box">
+        <p><strong>3. Suku Dayak banyak ditemukan di pulau?</strong></p>
+        <img src="../assets/quiz/dayak.jpg" alt="Suku Dayak" class="question-img">
+        <div class="options-grid">
+          <label><input type="radio" name="q2" value="a">A. Sulawesi</label>
+          <label><input type="radio" name="q2" value="b">B. Kalimantan</label>
+          <label><input type="radio" name="q2" value="c">C. Jawa</label>
+          <label><input type="radio" name="q2" value="d">D. Bali</label>
+        </div>
+        <div class="feedback" id="feedback-q2"></div>
+      </div>
+
+      <!-- Soal 4 -->
+      <div class="question-box">
+        <p><strong>4. Batik adalah warisan budaya dari?</strong></p>
+        <img src="../assets/quiz/batiikk.jpg" alt="Batik" class="question-img">
+        <div class="options-grid">
+          <label><input type="radio" name="q3" value="a">A. Malaysia</label>
+          <label><input type="radio" name="q3" value="b">B. Indonesia</label>
+          <label><input type="radio" name="q3" value="c">C. Thailand</label>
+          <label><input type="radio" name="q3" value="d">D. India</label>
+        </div>
+        <div class="feedback" id="feedback-q3"></div>
+      </div>
+
+      <!-- Soal 5 -->
+      <div class="question-box">
+        <p><strong>5. Pakaian adat Bundo Kanduang berasal dari?</strong></p>
+        <img src="../assets/quiz/bundo_kanduang.jpg" alt="Bundo Kanduang" class="question-img">
+        <div class="options-grid">
+          <label><input type="radio" name="q4" value="a">A. Jawa Barat</label>
+          <label><input type="radio" name="q4" value="b">B. Sumatra Barat</label>
+          <label><input type="radio" name="q4" value="c">C. Riau</label>
+          <label><input type="radio" name="q4" value="d">D. Kalimantan Tengah</label>
+        </div>
+        <div class="feedback" id="feedback-q4"></div>
+      </div>
+
+      <button type="submit" class="submit-btn"> Kumpulkan Jawaban</button>
+      <button type="back"class="back-btn"> Kembali Ke Home </button>
+    </form>
+  </div>
+
+  <script src="../js/quiz.js"></script>
+</body>
+</html>
