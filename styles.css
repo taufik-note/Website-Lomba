@@ -1,0 +1,289 @@
+body {
+    margin: 0;
+    font-family: 'Georgia', serif;
+    /* background-color: #e0e0e0; */
+    background-image: url(assets/backgroundbatik.png);
+    background-size: 400px;
+    background-repeat: repeat;
+    background-attachment: fixed;
+  }
+  
+  header {
+    background-image: url('path/to/hero-image.jpg');
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+  }
+  
+  nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  nav a {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+  }
+  
+  .btn-primary {
+    background-color: #6200ea;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 5px;
+    text-decoration: none;
+  }
+  
+  .section {
+    padding: 60px 20px;
+  }
+  
+  .hero-header {
+    background-image: url('assets/backgroudhd.jpg'); /* Ganti dengan path gambar kamu */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    text-align: center;
+    padding: 170px 40px;
+    position: relative;
+  }
+  
+  .hero-header h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    color:rgb(231, 229, 221);
+    text-shadow: 10px 10px 5px rgb(11, 11, 11); /* Biar teks terlihat jelas di atas gambar */
+    
+  }
+  
+.penjelasan {
+  display: flex;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+  overflow: hidden;
+  flex-wrap: wrap;
+  border-top-left-radius: 0%;
+  border-top-right-radius: 0%;
+}
+
+.penjelasan .text {
+  flex: 1;
+  padding: 40px;
+  font-size: 1.2rem;
+}
+
+.side-color {
+  flex: 1;
+  background-color: #f5bdbd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.side-color img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+  display: block;
+}
+
+.btn-explore {
+  background-color: #7b4d4d;
+  color: white;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border-radius: 8px;
+  text-decoration: none;
+  display: inline-block;
+  scroll-behavior: smooth;
+}
+
+.budaya-text {
+  margin-top: 20px;
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+  max-width: 600px;  
+}
+  
+.gallery {
+  padding: 2rem;
+  overflow-x: auto;
+  white-space: nowrap;
+  background-color: rgba(255, 255, 255, 0.1);
+
+  /* Sembunyikan scrollbar di semua browser */
+  -ms-overflow-style: none;  /* IE dan Edge lama */
+  scrollbar-width: none;     /* Firefox */
+}
+
+.gallery::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari, Opera */
+}
+
+.scroll-gallery {
+  display: flex;
+  gap: 2rem;
+}
+
+.scroll-gallery img {
+  height: 350px;
+  aspect-ratio: 2 / 3; /* lebar : tinggi */
+  object-fit: cover;
+  transition: transform 0.3s ease;
+  border-radius: 20px;
+}
+
+.scroll-gallery img:hover {
+  transform: scale(1.08);
+  z-index: 1;
+}
+
+ .map-section {
+  padding: 5rem;
+  text-align: center;
+  background-color: #f5f5dc; /* warna latar seperti kertas */
+}
+
+.map-section h2 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+
+.map-container {
+  position: relative;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.base-map {
+  width: 100%;
+  display: block;
+}
+
+.island {
+  position: absolute;
+  transition: transform 0.3s ease;
+}
+
+
+.island img {
+  width: 250px;
+  opacity: 0.9;
+}
+
+.island.bali img {
+  width: 100px; /* atau ukuran yang kamu inginkan */
+}
+
+.island.papua img{
+  width: 300px;
+}
+
+/* Hover */
+.island:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
+/* Penyesuaian posisi manual berdasarkan peta barumu */
+.jawa      { top: 44%; left: -7%; }
+.sumatera  { top: 2%; left: -40%; }
+.kalimantan{ top: -10%; left: -2%; }
+.sulawesi  { top: -8%; left: 40%; }
+.bali      { top: 72%; left: 34%; }
+.ntt       { top: 52%; left: 55%; }
+.papua     { top: 15%; left: 100%; }
+.maluku    { top: -9%; left: 70%; }
+
+@media (max-width: 800px) {
+  .island img {
+    width: 500px;
+  }
+}
+
+  
+  .quiz {
+  background-image: url('assets/bg-quiz.jpg'); /* ganti dengan background quiz kamu */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.quiz-overlay {
+  background-color: rgba(128, 0, 0, 0.6); /* maroon semi transparan */
+  padding: 60px 20px;
+  max-width: 800px;
+  margin: auto;
+  border-radius: 20px;
+  backdrop-filter: blur(4px);
+}
+
+.quiz-content h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.quiz-content p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.start-btn {
+  background-color: #800000;
+  color: white;
+  padding: 12px 30px;
+  font-size: 1.2rem;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.start-btn:hover {
+  background-color: #a00000;
+}
+
+  footer {
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .social-icons div {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #af6d6d;
+    margin-bottom: 15px;
+  }
+  .copyright {
+    color: rgb(191, 191, 191);
+  }
+
+  
