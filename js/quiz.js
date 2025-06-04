@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const backBtn = document.querySelector(".back-btn");
   if (backBtn) {
     backBtn.addEventListener("click", function () {
-      window.location.href = "../main.html"; // Ganti path jika perlu
+      window.location.href = "../index.html"; // Ganti path jika perlu
     });
   }
 });
